@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="ltr"
+    tools:context=".SafetyActivity">
+
+    <RelativeLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageBack"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="end"
+            android:src="@drawable/ic_back" />
+
+        <ImageView
+            android:id="@+id/imageLayout"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/meow_logo" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Safety"
+        android:textAlignment="center"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tabLayout" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="16dp"
+            android:text="This practice is committed to taking all available steps to ensure a safe environment for all team members and cats. We require all team members to follow these guidelines to promote safety and reduce the chances of injury.
+\n\n1.	All members, when working alone or with another team member, are required to use an appropriate restraint for cats when performing nail trims, ear cleanings, showers and any other similar procedures. Whenever possible, close all doors in a room before handling the cats. This is especially important when you’re taking a cat out of a cage.
+
+\n\n2.	Transport all cats by carrier. If a cat gets loose, close the doors to create a secure area. Then ask for help. Finally, employ the least scary means of capture first. Once you’ve restrained the cat, reassess whether it’s reasonable to continue your original course of action based on the cat’s reaction.
+
+\n\n3.	Members should always clean themselves and the place after each cat to ensure the safety of the next cat arriving."
+            android:textSize="24sp" />
+
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
